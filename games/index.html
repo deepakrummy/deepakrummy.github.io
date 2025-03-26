@@ -1,50 +1,28 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="../images/ico.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="/storage/css/games.css" rel="stylesheet">
-    <title>Games</title>
-
-    <meta content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface" name="description">
-    <meta content="seraph" property="og:site_name">
-    <meta content="seraph" property="og:title">
-    <meta content="website" property="og:type">
-    <meta content="an open source games site hosting 500+ games, useful utilities, powerful settings + a clean user interface" property="og:description">
-
-    <style>
-        .pinned-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .pin-button {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            z-index: 2;
-        }
-    </style>
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/offline-worker.js').then(function (registration) {
-                    console.log('service worker initalised! scope:', registration.scope);
-
-                    navigator.serviceWorker.addEventListener('message', function (event) {
-                        if (event.data === 'cached') {
-                            document.getElementById('cache-status').style.display = 'block';
-                        }
-                    });
-                }, function (error) {
-                    console.log('ack, error with serviceworker! ', error);
-                });
-            });
-        }
-    </script>
-</head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Play Games as your wish</title>
+    <meta name="keywords" content="front-end web developer, unblocked, games, glom, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
+    <meta property="og:title" content="Welcome to deepakrummy.github.io, your best option for unblocked games on the internet." />
+    <meta property="og:site_name" content="deepakrummy.github.io" />
+    <meta property="og:description" content="Welcome to deepakrummy.github.io, your best option for unblocked games on the internet." />
+    <meta name="description" content="Welcome to deepakrummy.github.io, your best option for unblocked games on the internet." />
+    <meta name="author" content="3kh0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/..css" />
+    <script src="js/main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  </head>
 <body>
 
 <h1 class="typewriter"><span id="cursor"></span></h1>
@@ -60,14 +38,18 @@
     <option value="simulation">simulation</option>
 </select>
 
-<p class="linkp"><a href="../index.html">homepage</a> • <a href="https://github.com/a456pur/seraph" target="_blank">github</a> • <a href="https://discord.gg/ZyZDmx3zuQ" target="_blank">discord</a> • <a
+<p class="linkp"><a href="games/../index.html">homepage</a> • <a href="games/https://deepakworld.github.io" target="_blank">Music</a> • <a href="games/https://deepakstorm.web.app" target="_blank">Deepak Profile</a> • <a
     id="openBlankLink">open blank</a></p>
+<p>Play Free Games & Donate with UPI/Paypal</p>
+<a href="games/https://www.paypal.com/paypalme/VTXDZRNHWDFU8?v=1&utm_source=unp&utm_medium=email&utm_campaign=RT000481&utm_unptid=add4e82e-00d9-11f0-ae69-557dcc4c0799&ppid=RT000481&cnac=IN&rsta=en_GB%28en-IN%29&cust=VTXDZRNHWDFU8&unptid=add4e82e-00d9-11f0-ae69-557dcc4c0799&calc=f6012132d2b1a&unp_tpcid=ppme-social-business-profile-created&page=main%3Aemail%3ART000481&pgrp=main%3Aemail&e=cl&mchn=em&s=ci&mail=sys&appVersion=1.315.0&tenant_name=PAYPAL&xt=145585%2C154413%2C104038&link_ref=paypalme_vtxdzrnhwdfu8" class="button">Donate with Paypal</a>
+<img src="pay.png" alt="pay" width="200" height="200">
 
 <br>
 <h2 class="pinned-header">starred games</h2>
 <div class="pinned-container">
 
 </div>
+
 
 <h2 class="allgames-header"></h2>
 <div class="button-container">
